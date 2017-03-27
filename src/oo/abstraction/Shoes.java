@@ -1,11 +1,11 @@
 package oo.abstraction;
 
 public class Shoes {
-
+	int id;
 	String brand;
-    int price;
-    String name;
-    String type;
+  	int price;
+    	String name;
+   	String type;
     public Shoes(String brand,int price, String name,String type){
     	   this.brand=brand;
     	   this.price=price;
