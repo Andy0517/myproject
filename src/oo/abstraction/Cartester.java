@@ -30,10 +30,7 @@ public class Cartester {
 
 		}
 		System.out.println(i);
-		class AA {
-			
-		}
-		AA a = new AA();
+		
 	}
 
 }
