@@ -13,7 +13,16 @@ public class Invoice {
 		System.out.println(n.length());
 		System.out.println(n.substring(n.length()-3));
 		
-		
+		System.out.println("請輸入發票號碼:");
+		Scanner input = new Scanner(System.in);
+		String number;
+	    number=input.nextLine();
+	   int lucky = Integer.parseInt(number.substring(number.length()-3));
+	   if((lucky==331)||(lucky==821)||(lucky==886)||(lucky==554)){
+		   System.out.println("恭喜中獎!");
+	   }else{
+		   System.out.println("哈哈!槓龜啦~");
+	   }
 		
 		/*Scanner input = new Scanner(System.in);
 	     int number = input.nextInt();
