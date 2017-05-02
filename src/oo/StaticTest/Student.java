@@ -16,7 +16,7 @@ public class Student {
 			
 		}
 		
-		private String getScore(int score){
+		protected String getScore(int score){
 			if(score<pass){
 				return String.valueOf(score)+"*";
 			}else{
