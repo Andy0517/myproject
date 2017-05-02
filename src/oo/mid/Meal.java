@@ -13,9 +13,7 @@ public class Meal {
 	}
 	
 	public int giveChange(){
-		if(price>buyprice){
-			int change=buyprice-price;
-			return change;
-		}
+			return price=buyprice-price;
+		
 	}
 }

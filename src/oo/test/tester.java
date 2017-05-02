@@ -1,6 +1,7 @@
 package oo.test;
 import java.util.ArrayList;
 
+import oo.StaticTest.Student;
 import oo.abstraction.*;
 public class tester {
 
@@ -20,7 +21,7 @@ public class tester {
 		System.out.println(a);
 		String data = a.get(3);
 		//int n =(int) a.get(4);
-		
+	Student s1= new Student();
 	}
 
 }
