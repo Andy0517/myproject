@@ -7,6 +7,8 @@ import oo.abstraction.*;
 public class tester {
 
 	public static void main(String[] args) {
+		Student stu = new Student();
+		System.out.println(stu);
 		Car c1 = new Car("TOYOTA","ALTIS",1800);
 		ArrayList<String> a = new ArrayList();
 		//String[] number={"331","821","554"};

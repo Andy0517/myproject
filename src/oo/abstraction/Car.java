@@ -1,6 +1,7 @@
 package oo.abstraction;
 
-public class Car{
+public class Car extends Object{
+	//自動繼承Object類別
     int id;
     String brand;
     int cc;

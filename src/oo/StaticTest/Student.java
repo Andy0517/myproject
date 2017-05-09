@@ -27,5 +27,12 @@ public class Student {
 		public void print(){
 			System.out.println(getScore(english)+"\t"+getScore(math)+"\t"+getScore(chinese)+"\t");
 		}
+		//讓string被呼叫時要顯示的內容
+		public String toString(){
+			 return
+				      "english = " + english + "\n" +
+				      "math = " + math + "\n" +
+				      "chinese = " + chinese + "\n" ;
+		}
 
 }
