@@ -1,19 +1,49 @@
 package oo.shopping;
 
+import java.util.ArrayList;
+
 public class test {
 
 	public static void main(String[] args) {
 		System.out.println("さぱ禣肂:");
-		System.out.println("め单"+"\t"+"基"+"\t"+"чΙ基"+"\t"+"临");
-		Shop s1 = new Shop();
-		Shop s2 = new Shop();
-		Shop s3 = new Shop();
+		System.out.println("め单"+"\t"+"  基"+"\t"+"чΙ基"+"\t"+"临");
+		/*Costumer s1 = new Costumer();
+		Costumer s2 = new Costumer();
+		Costumer s3 = new Costumer();
 		s1.normal(6000);
 		s2.sliver(8000);
 		s2.sliver(10000);
 		s3.gold(30000);
 		s1.normal(2000);
-		s3.gold(10000);
+		s3.gold(10000);*/
+		ArrayList<Costumer> list = new ArrayList();
+		list.add(new Costumer(6000));
+		list.add(new SliverCostumer(8000));
+		list.add(new SliverCostumer(10000));
+		list.add(new GoldCostumer(30000));
+		list.add(new Costumer(10000));
+		list.add(new GoldCostumer(6000));
+		for(int i=0;i<list.size();i++){
+			Costumer cost = list.get(i);
+			if(cost instanceof SliverCostumer && !(cost instanceof GoldCostumer)){
+				System.out.print("*");
+			}else
+			{
+				System.out.print("   ");
+			}
+			cost.information();
+		}
+		System.out.println();
+		for(Costumer cost:list){
+			if(cost instanceof SliverCostumer && !(cost instanceof GoldCostumer)){
+			System.out.print("*");
+			SliverCostumer sliver = (SliverCostumer)cost;
+		}else
+		{
+			System.out.print("   ");
+		}
+		cost.information();
+	}
 		
 	}
 
