@@ -1,15 +1,14 @@
-package oo.shopping;
+package oo.Customer;
 
-public class GoldCostumer extends  SliverCostumer{
-	
-		public GoldCostumer(int price) {
-		super(price);
+public class GoldenCustomer extends Customer{
+	public GoldenCustomer(int price){
+		price=this.price;
 	}
 
-		public void information(){
-			int s=(int) (price*0.9);
-			mon=(int) (price*0.05);
-			System.out.println("ª÷¯Å"+"\t"+price+"\t"+s+"\t"+mon);
+	public void print(){
+		int s=(int) (price*0.9);
+		int mon=(int) (price*0.05);
+			System.out.println("ÂªÃ·Â¯Ã…"+"\t"+price+"\t"+s+"\t"+mon);
 			
 		}
 }
