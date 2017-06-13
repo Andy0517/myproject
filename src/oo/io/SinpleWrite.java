@@ -7,14 +7,19 @@ import java.io.IOException;
 public class SinpleWrite {
 
 	public static void main(String[] args){
-		try {
-			FileOutputStream fos = new FileOutputStream("data.txt");
-			fos.write(98);
-			fos.flush();
-			fos.close();
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
-		}
+	
+			try{
+				FileOutputStream fos = new FileOutputStream("data.txt");
+				fos.write(97);
+				fos.write(98);
+				fos.write(99);
+				fos.flush();  				//確保會到檔案內  要記得！！		
+				fos.close();
+			}catch (FileNotFoundException e) {
+				e.printStackTrace();
+			}catch (IOException e) {
+				e.printStackTrace();
+			}
 
 	}
 

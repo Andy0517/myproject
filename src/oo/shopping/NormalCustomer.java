@@ -1,4 +1,4 @@
-package oo.Customer;
+package oo.shopping;
 
 public class NormalCustomer extends Customer{
 	

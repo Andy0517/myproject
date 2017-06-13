@@ -16,25 +16,25 @@ public class test {
 		s3.gold(30000);
 		s1.normal(2000);
 		s3.gold(10000);*/
-		ArrayList<Costumer> list = new ArrayList();
-		list.add(new Costumer(6000));
+		ArrayList<Customer> list = new ArrayList();
+		list.add(new NormalCustomer(6000));
 		list.add(new SliverCostumer(8000));
 		list.add(new SliverCostumer(10000));
 		list.add(new GoldCostumer(30000));
-		list.add(new Costumer(10000));
+		list.add(new NormalCustomer(10000));
 		list.add(new GoldCostumer(6000));
 		for(int i=0;i<list.size();i++){
-			Costumer cost = list.get(i);
+			Customer cost = list.get(i);
 			if(cost instanceof SliverCostumer && !(cost instanceof GoldCostumer)){
 				System.out.print("*");
 			}else
 			{
 				System.out.print("   ");
 			}
-			cost.information();
+			cost.print();
 		}
 		System.out.println();
-		for(Costumer cost:list){
+		for(Customer cost:list){
 			if(cost instanceof SliverCostumer && !(cost instanceof GoldCostumer)){
 			System.out.print("*");
 			SliverCostumer sliver = (SliverCostumer)cost;
@@ -42,7 +42,7 @@ public class test {
 		{
 			System.out.print("   ");
 		}
-		cost.information();
+		cost.print();
 	}
 		
 	}
