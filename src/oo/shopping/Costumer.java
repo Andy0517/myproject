@@ -1,15 +1,13 @@
-package oo.shopping;
+package oo.Customer;
 
-public class Costumer {
-	int price;
-	int mon;
-	public Costumer(int price){
-		this.price=price;
+public class NormalCustomer extends Customer{
+	
+	public NormalCustomer(int price){
+		price=this.price;
 	}
 	
-	
-	public void information(){
-		System.out.println("¤@¯ë"+"\t"+price+"\t"+price+"\t"+mon);
+	public void print(){
+		System.out.println("Â¤@Â¯Ã«"+"\t"+price+"\t"+price+"\t"+mon);
 	}
 
 }
