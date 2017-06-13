@@ -1,13 +1,13 @@
-package oo.shopping;
+ackage oo.Customer;
 
-public class SliverCostumer extends  Costumer{
-	
-	public SliverCostumer(int price){
-		super(price);
-	}
-	
-	public void information(){
-		int s=(int) (price*0.9);
-		System.out.println("�ȯ�"+"\t"+price+"\t"+s+"\t"+mon);
+public class SilverCustomer extends Customer {
+
+public SilverCustomer(int price){
+	price=this.price;
+}
+
+public void print(){
+	int s=(int) (price*0.9);
+		System.out.println("»È¯Å"+"\t"+price+"\t"+s+"\t"+mon);
 	}
 }
